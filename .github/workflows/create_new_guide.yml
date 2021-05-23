@@ -489,7 +489,7 @@ jobs:
           IFS=$'\n'
           File="/tmp/ninja_label_list.json"
           Loops=$(cat $File | jq -r '.[].name' | wc -l)
-          Loopnum=0
+          Loopnum=1
           while [ $Loopnum -lt $Loops ]
           do
             echo "this is loopnum: $Loopnum"
@@ -500,7 +500,7 @@ jobs:
             color=$(cat $File | jq '.['$Loopnum'].color')
             echo "color is $color"
             curl -X POST \
-              -H "Authorization: token $GITHUB_OAUTH_TOKEN" \
+              -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
               -H "Accept: application/vnd.github.v3+json" \
               "https://api.github.com/repos/modernappsninja/${{ env.guide_repo_name }}/labels" \
               -d '{"name": '$name', "description": '$description', "color": '$color'}' \
@@ -512,7 +512,7 @@ jobs:
           done
       - name: create discussion message on guide team page with details on new guide assets
         run: |
-          body='Welcome to the ${{ env.guide_repo_name }} guide team @${{ github.event.sender.login }}!
+          body='Welcome to the ${{ env.guide_repo_name }} guide team @${{ github.event.sender.login }}.
           The  new guide repository for ${{ env.guide_repo_name }} is now available at:
           [https://github.com/modernappsninja/${{ env.guide_repo_name }}/](https://github.com/modernappsninja/${{ env.guide_repo_name }}/)
           The new guide is now in a live but unpublished state. 
@@ -520,17 +520,17 @@ jobs:
           You can view instructions on customizing and publishing the new guide on the new guide website at:
           [https://modernapps.ninja/${{ env.guide_repo_name }}/](https://modernapps.ninja/${{ env.guide_repo_name }}/)
           You can find further information on customizing and publishing the guide on the [New Guide Template Site](https://modernapps.ninja/guide_repo_template_ct8279/)
-          Thank you for contributing to the ModernApps Ninja Community!'
+          Thank you for contributing to the ModernApps Ninja Community.'
           curl -X POST \
-          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
-          -H "Accept: application/vnd.github.v3+json" \
-          -d '{"title":"Welcome to the guide team!","body":"'$body'"}' \
-          "https://api.github.com/orgs/modernappsninja/teams/${{ env.guide_team_slug }}/discussions" \
-          -o /tmp/add_guide_team_discussion_response.json
+            -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -d '{"title":"Welcome to the guide team!","body":"'$body'"}' \
+            "https://api.github.com/orgs/modernappsninja/teams/${{ env.guide_team_slug }}/discussions" \
+            -o /tmp/add_guide_team_discussion_response.json
           cat /tmp/add_guide_team_discussion_response.json
       - name: create issue ticket on new guide repo with details on new guide assets
         run: |
-          body='Welcome to the ${{ env.guide_repo_name }} guide team @${{ github.event.sender.login }}!
+          body='Welcome to the ${{ env.guide_repo_name }} guide team @${{ github.event.sender.login }}.
           The  new guide repository for ${{ env.guide_repo_name }} is now available at:
           [https://github.com/modernappsninja/${{ env.guide_repo_name }}/](https://github.com/modernappsninja/${{ env.guide_repo_name }}/)
           The new guide is now in a live but unpublished state. 
@@ -538,12 +538,11 @@ jobs:
           You can view instructions on customizing and publishing the new guide on the new guide website at:
           [https://modernapps.ninja/${{ env.guide_repo_name }}/](https://modernapps.ninja/${{ env.guide_repo_name }}/)
           You can find further information on customizing and publishing the guide on the [New Guide Template Site](https://modernapps.ninja/guide_repo_template_ct8279/)
-          Please close this issue ticket, you can view it again any time by viewing closed issue tickets.
-          Thank you for contributing to the ModernApps Ninja Community!'
+          Thank you for contributing to the ModernApps Ninja Community.'
           curl -X POST \
-          -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
-          -H "Accept: application/vnd.github.v3+json" \
-          -d '{"title":"Welcome to the new guide repository!","body":"'$body'"}' \
-          "https://api.github.com/repos/modernappsninja/${{ env.guide_repo_name }}/issues" \
-          -o /tmp/add_issue_message_response.json
+            -H "Authorization: token ${{ secrets.NINJABOTGURU }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -d '{"title":"Welcome to the new guide repository!","body":"'$body'"}' \
+            "https://api.github.com/repos/modernappsninja/${{ env.guide_repo_name }}/issues" \
+            -o /tmp/add_issue_message_response.json
           cat /tmp/add_issue_message_response.json
