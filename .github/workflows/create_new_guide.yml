@@ -25,22 +25,6 @@ on:
 
 jobs:
   create_new_guide:
-
-# create unique guide ID
-# create new repository for the guide
-# clone guide repository template to runner
-# hydrate guide configuration files with variables for the new guide
-# update the git config for the cloned template setting the origin as the new guide repository
-# push hydrated template contents to new guide repository
-# Hugo setup for gh-pages branch
-# Hugo Build
-# push for gh-pages
-# ensure github pages is enabled for new repository
-# set guide creation requestor github account as admin for new guide repository
-# create guide card
-# upload guide card to modernapps.ninja guide catalog with draft status set to true
-# Open an issue ticket on new guide repository addressing the guide creation requestor github account to notify them the new guide repo is ready and any additional instructions
-
     name: create new guide job
     runs-on: ubuntu-latest
     steps:
