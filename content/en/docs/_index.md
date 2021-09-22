@@ -1,6 +1,6 @@
 ---
-title: "ModernApps by VMware Tanzu Learning Guide Template"
-linkTitle: "ModernApps Learning Guide Template"
+title: "VMware Certified Professional - Application Modernization Study Guide"
+linkTitle: "VCP-AM Study Guide"
 weight: 20
 menu:
   main:
