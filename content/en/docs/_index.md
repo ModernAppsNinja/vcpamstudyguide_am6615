@@ -28,9 +28,9 @@ Before scheduling the exam, candidates are required to complete one of the follo
 - [Kubernetes Foundations](https://mylearn.vmware.com/mgrReg/courses.cfm?ui=www_edu&a=one&id_subject=89562)
 - [VMware Tanzu Kubernetes Grid: Install, Configure, Manage V1.3](https://mylearn.vmware.com/mgrReg/courses.cfm?ui=www_edu&a=one&id_subject=96343)
 
-**Important:** Because this exam covers multiple products, none of the required courses covers all exam topics, and candidates will need to thoroughly review the [official exam guide](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/certification/vmware-vcp-am-exam-preparation-guide.pdf) to ensure adequate preparation for all exam topics.
+**Important:** Because this exam covers multiple products, none of the required courses covers all exam topics, and candidates will need to thoroughly review the [official exam study guide](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/certification/vmware-vcp-am-exam-preparation-guide.pdf) to ensure adequate preparation for all exam topics.
 
-Each of the courses listed above provide coverage of the exam topics related to the product covered in the course, and accordingly candidates should plan for additional study of the exam topics that are not included in the course(s) a user may choose to take. If a candidate were to take all of the above listed courses, they should provide complete coverage of all exam topics; However only one course is required and many candidates prefer to take one course and self-study to gain adequate knowledge of all exam topics.
+Each of the courses listed above provide coverage of the exam topics related to the product covered in the course. Candidates should plan for additional study of the exam topics that are not included in the course(s) a user may choose to take. If a candidate were to take all of the above listed courses, they should provide complete coverage of all exam topics; However only one official course is required and many candidates prefer to take one course and self-study to gain adequate knowledge of all exam topics.
 
 The following sections contain links to official certification materials, as well as additional courses and resources that provide additional information about the exam topic.
 
@@ -45,11 +45,11 @@ The links below are for official resources from VMware Education Services about 
 
 ### Additional Resources to Help Prepare
 
-We have recived feedback from community members that several ModernApps Learning and KubeAcademy Courses are very helpful in preparing for the exam. Each free ModernApps Learning course also provides a verified digital badge to participants who complete all course requirements.
+We have received feedback from community members that several ModernApps Learning and KubeAcademy Courses are very helpful in preparing for the exam. Each free ModernApps Learning course also provides a verified digital badge to participants who complete all course requirements.
 
-In addition courses, there are several additional learning resources helpful in preparing for the exam listed below.
+In addition to courses, there are several other learning resources that are helpful in preparing for the exam listed below.
 
-Please note that these resources are not designed specifically for VCP-AM, and may not cover all exam topics, so while they may be very helpful for exam preparation, candidates should be sure to fully review all exam topics in the official exam study guide and do additional study to ensure you have thoroughly reviewed all exam topics. 
+Please note that these resources are not designed specifically for VCP-AM, and may not cover all exam topics, so while they may be very helpful for exam preparation, candidates should be sure to fully review all exam topics in the [official exam study guide](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/certification/vmware-vcp-am-exam-preparation-guide.pdf) and do additional study to ensure you have thoroughly reviewed all exam topics. 
 
 #### Recommended Courses
 
