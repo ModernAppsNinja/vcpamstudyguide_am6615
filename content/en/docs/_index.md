@@ -1,5 +1,5 @@
 ---
-title: "VMware Certified Professional - Application Modernization Study Guide"
+title: "ModernApps Learning VMware Certified Professional - Application Modernization Study Guide"
 linkTitle: "VCP-AM Study Guide"
 weight: 20
 menu:
@@ -7,74 +7,66 @@ menu:
     weight: 20
 ---
 
-- [About the Learning Guide Template](#about-the-learning-guide-template)
-- [Formatting Reference](#formatting-reference)
-  - [Reference Guide](#reference-guide)
-  - [Source Template Documentation](#source-template-documentation)
-  - [Template Framework Documentation](#template-framework-documentation)
-- [How to create a new Learning Guide](#how-to-create-a-new-learning-guide)
-  - [Prerequisites](#prerequisites)
-  - [Instructions](#instructions)
+**Please Contribute to this guide!** This guide is provided freely as a comunity effort, and it depends on each of you to help make this the best resource possible. If you find any good resources not listed here while studying for the exam, or if you take the exam - please use the edit this page link to share your experience and insights with the community!
 
-## About the Learning Guide Template
+**Disclaimer:** This guide is a community effort to provide information related to the VCP-AM exam. This document do not provide any assurance or warranty that it can successfully prepare users to pass the VCP-AM Exam. This document is not officially reviewed or endorsed by VMware Education Services.
 
-This template is a simple, single page template based on [Google's Open Source Docsy theme](https://docsy.dev) for the [Hugo Static Site generator](https://gohugo.io), that includes custom styling and feature enhancements for the ModernApps community. 
+## About the VMware Certified Professional - Application Modernization - Exam Number 2V0-71.21
 
-In addition to the static content present in the template, the template itself includes a number of key workflow automations based on github actions. This repository includes an automated workflow that allows members with contributor or greater privileges to automatically create a new lab guide template repository which they can use to create a custom lab guide. 
+The VCP-AM certification validates a candidate’s expertise with VMware Tanzu Standard Edition including vSphere with Tanzu, Tanzu Kubernetes Grid and Tanzu Mission Control. This certification also demonstrates fundamental cloud native skills including containerization, Kubernetes, and application modernization.
 
-This workflow automates the setup of the new lab guide including: 
-- Creates a new repository
-- Scaffolds many of the lab guide settings files with the new guide title, url and other variables
-- Creates the full set of standard ModernApps by Tanzu github labels on the new repository
-- Implements the ModernApps by Tanzu Github Teams-based IAM and Policy Model on the new repository
-- Adds the guide creator to the Maintainers team for the ModernApps Ninja github org and the new repository, empowering the content developer to customize the settings for their repository if desired
+The VCP-AM is a 55 question exam, which must be completed within 130 minutes.
 
-Once the new repository is created, it is pre-loaded with several other key workflow automations, the most important of which is the hugo build action, which automatically triggers a hugo build to generate updated html files each time you update a source markdown file on this repository. 
+## Preparing for the VCP-AM Exam
 
-There is no specific formatting requirement for what constitutes a "Learning Guide", this repository is intended to be used for anyone who wants to create a one or more page site, where the content creator is free to utilize the full range of capabilities possible within the robust Docsy and Hugo frameworks.
+Before scheduling the exam, candidates are required to complete one of the following courses:
 
-The docsy template was chosen because of its in-page navigation features that empower content creators to create long single page documents utilizing in-page navigation, and also to support complex multi-page and multi-section navigational structures. Accordingly content developers can also start a guide with a simple single page, and can choose to grow the site over time to a more complex multi-page or multi-section structure, or grow a guide into a full ModernApps Course over time, as the ModernApps Course template is a multi-section implementation based on the same exact baseline docsy template. 
+- [VMware vSphere with Tanzu: Deploy and Manage V7](https://mylearn.vmware.com/mgrReg/courses.cfm?ui=www_edu&a=one&id_subject=93247)
+- [VMware vSphere with Tanzu: Deploy and Manage V7 - On Demand](https://mylearn.vmware.com/mgrReg/courses.cfm?ui=www_edu&a=one&id_subject=95134)
+- [VMware Tanzu Kubernetes Grid: Install, Configure, Manage V1.0](https://mylearn.vmware.com/mgrReg/courses.cfm?ui=www_edu&a=one&id_subject=93809)
+- [VMware Tanzu Mission Control: Management and Operations 2020](https://mylearn.vmware.com/mgrReg/courses.cfm?ui=www_edu&a=one&id_subject=93395)
+- [Kubernetes Foundations](https://mylearn.vmware.com/mgrReg/courses.cfm?ui=www_edu&a=one&id_subject=89562)
+- [VMware Tanzu Kubernetes Grid: Install, Configure, Manage V1.3](https://mylearn.vmware.com/mgrReg/courses.cfm?ui=www_edu&a=one&id_subject=96343)
 
-## Formatting Reference
+**Important:** Because this exam covers multiple products, none of the required courses covers all exam topics, and candidates will need to thoroughly review the [official exam guide](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/certification/vmware-vcp-am-exam-preparation-guide.pdf) to ensure adequate preparation for all exam topics.
 
-### Reference Guide
+Each of the courses listed above provide coverage of the exam topics related to the product covered in the course, and accordingly candidates should plan for additional study of the exam topics that are not included in the course(s) a user may choose to take. If a candidate were to take all of the above listed courses, they should provide complete coverage of all exam topics; However only one course is required and many candidates prefer to take one course and self-study to gain adequate knowledge of all exam topics.
 
-As there is already extensive documentation available for the docsy template, we would like to rely on the docsy documentation except in cases where the ModernApps template has a unique customization that requires instructions not present in the source docsy template instructions. 
+The following sections contain links to official certification materials, as well as additional courses and resources that provide additional information about the exam topic.
 
-Perhaps the simplest method to get started creating a ModernApps by Tanzu learning guide is to see if another guide is already published that is similar in style to how you would like your guide to look, to use that guide as a reference or even copy content from that guide into this repository and customize the content to your desire. If you arent familiar with markdown, perhaps the easiest way to get started is this method of copying from and modifying an existing guide with your content. 
+### Review Official Exam Resources
 
-You can browse other ModernApps by Tanzu guides to use for reference here: [https://modernapps.ninja/guide/](https://modernapps.ninja/guide/)
+The links below are for official resources from VMware Education Services about the VCP-AM. It is recommended that you review each item thoroughly in preparation for the exam:
 
-If you desire to create content that is formatted very differently from the existing guides, that is perfectly fine, you are free to reference the docsy template documentation and utilize the full range of features available in the docsy template. 
+- [VCP-AM Exam Homepage and FAQ's](https://www.vmware.com/education-services/certification/vcp-am.html)
+- [Exam Information PDF](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/certification/vmware-VCP-AM-certification-preparation-guide-2021.pdf)
+- [Exam Details Page](https://www.vmware.com/education-services/certification/vcp-am-exam.html)
+- [Official Exam Study Guide - Includes list of all exam topics](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/certification/vmware-vcp-am-exam-preparation-guide.pdf)
 
-### Source Template Documentation
+### Additional Resources to Help Prepare
 
-This repository is based on Google's docsy theme, which has excellent reference documentation for everything on basic Markdown formatting reference to detailed instructions for taking advantage of a wide variety of content and features that can be enabled within the docsy template. 
+We have recived feedback from community members that several ModernApps Learning and KubeAcademy Courses are very helpful in preparing for the exam. Each free ModernApps Learning course also provides a verified digital badge to participants who complete all course requirements.
 
-The docsy documentation can be found at [https://docsy.dev](https://docsy.dev).
+In addition courses, there are several additional learning resources helpful in preparing for the exam listed below.
 
-### Template Framework Documentation
+Please note that these resources are not designed specifically for VCP-AM, and may not cover all exam topics, so while they may be very helpful for exam preparation, candidates should be sure to fully review all exam topics in the official exam study guide and do additional study to ensure you have thoroughly reviewed all exam topics. 
 
-The Docsy theme is implemented by the Hugo static site generator. Hugo offers an even greater array of customizations that guide developers can leverage to be able to offer an incredibly robust range of options that make it possible to leverage virtually any feature available in modern web frameworks within your learning guide. 
+#### Recommended Courses
 
-The Hugo documentation can be found at [https://gohugo.io](https://gohugo.io)
+- [Getting Started with Kubernetes](https://kube.academy/courses/getting-started)
+- [Interactive Introduction to Containers and Kubernetes](https://kube.academy/courses/interactive-introduction-to-containers-and-kubernetes)
+- [Introduction to the VMware Tanzu Portfolio](https://modernapps.ninja/course/introtanzuportfolio/)
+- [VMware Tanzu Standard 101](https://modernapps.ninja/course/introtanzustandard_ts7297/)
+- [vSphere with Tanzu 101](https://modernapps.ninja/course/vspheretanzu101_vt7301/)
+- [vSphere with Tanzu 201](https://modernapps.ninja/course/vspheretanzu201_vt4599/)
 
-## How to create a new Learning Guide
+#### Recommended Guides and Learning Resources
 
-### Prerequisites
+- [VMware Hands-on-labs](https://hol.vmware.com/) provides several excellent labs with educational and hands-on exercises for each of the products featured in the VCP-AM including Tanzu Kubernetes Grid, vSphere with Tanzu, and Tanzu Mission Control.
+  - Please see the [Hands-on-labs Application Modernization](https://labs.hol.vmware.com/HOL/catalogs/catalog/1886) catalog to find the latest labs available for the Tanzu Portfolio.
+- [VMware Pathfinder](https://pathfinder.vmware.com/catalog?filters=eyJQcm9kdWN0IjpbInZtd2FyZV90YW56dSJdfQ%3D%3D&tab=all) provides several free learning paths which include hands-on-lab activities for the Tanzu Portfolio.
+- [VMware Tanzu Developer Center](https://tanzu.vmware.com/developer/) provides a large number of learning guides, interactive workshops and other educational resources for cloud native technologies and the Tanzu Portfolio
 
-To create a new learning guide, you must first have contributor or highter level priviliges in the ModernApps community. If you do not yet have contributor priviliges, you can open a support request ticket for assistance here: [https://github.com/ModernAppsNinja/modernappsninja.github.io/issues/new/choose](https://github.com/ModernAppsNinja/modernappsninja.github.io/issues/new/choose)
+### Community Resources, Tips, and Testimonials
 
-### Instructions
-
-1. Navigate to the actions tab on the github repository for this page
-2. Select the `Create New Learning Guide` Workflow
-3. Select the `Run Workflow` pulldown to expose the form you need to fill in to run the workflow
-4. Fill in the form fields including title, description etc, and then click `Run Workflow`
-
-After you click run workflow, the workflow will build a new repository for your learning guide, and will post a message to the new repository to provide instructions and alert the github user account that initiated the Create New Learning guide workflow that the new repository is now available.
-
-Once the new guide is provisioned, the content author can then customize the content in the template until it provides the information and user experience desired. Once the new guide is prepared, you can open a trouble ticket on the modernapps.github.io repo requesting that the guide be published on the ModernApps.ninja homepage. 
-
-Thanks for participating in the ModernApps by VMware Tanzu Community!
-
+If anyone studying for the VCP-AM Exam has any tips, recommended resources or testimonials, the community is incredibly grateful if you can please share your recomendations.
