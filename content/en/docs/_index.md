@@ -70,3 +70,5 @@ Please note that these resources are not designed specifically for VCP-AM, and m
 ### Community Resources, Tips, and Testimonials
 
 If anyone studying for the VCP-AM Exam has any tips, recommended resources or testimonials, the community is incredibly grateful if you can please share your recomendations.
+
+- [Exam Review by Rudi Martinsen](https://rudimartinsen.com/2021/06/23/exam-review-vcp-am-2021/)
