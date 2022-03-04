@@ -62,7 +62,7 @@ Please note that these resources are not designed specifically for VCP-AM, and m
 
 #### Recommended Guides and Learning Resources
 
-- [VMware Hands-on-labs](https://hol.vmware.com/) provides several excellent labs with educational and hands-on exercises for each of the products featured in the VCP-AM including Tanzu Kubernetes Grid, vSphere with Tanzu, and Tanzu Mission Control.
+- [These VMware Hands-on-labs](https://modernapps.ninja/about/labs/) provide hands-on exercises for each of the products featured in the VCP-AM including Tanzu Kubernetes Grid, vSphere with Tanzu, and Tanzu Mission Control.
   - Please see the [Hands-on-labs Application Modernization](https://labs.hol.vmware.com/HOL/catalogs/catalog/1886) catalog to find the latest labs available for the Tanzu Portfolio.
 - [VMware Pathfinder](https://pathfinder.vmware.com/catalog?filters=eyJQcm9kdWN0IjpbInZtd2FyZV90YW56dSJdfQ%3D%3D&tab=all) provides several free learning paths which include hands-on-lab activities for the Tanzu Portfolio.
 - [VMware Tanzu Developer Center](https://tanzu.vmware.com/developer/) provides a large number of learning guides, interactive workshops and other educational resources for cloud native technologies and the Tanzu Portfolio
